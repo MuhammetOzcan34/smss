@@ -1,178 +1,319 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1894.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 13.0px Menlo; color: #1443ae; -webkit-text-stroke: #1443ae}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 13.0px Menlo; color: #4d5055; -webkit-text-stroke: #4d5055}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 13.0px Menlo; color: #18191b; -webkit-text-stroke: #18191b}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 13.0px Menlo; color: #2e3133; -webkit-text-stroke: #2e3133; min-height: 15.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 13.0px Menlo; color: #2e3133; -webkit-text-stroke: #2e3133}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 13.0px Menlo; color: #a20010; -webkit-text-stroke: #a20010}
-    span.s1 {font-kerning: none; color: #2a2a2a; background-color: #f6f7f9; -webkit-text-stroke: 0px #2a2a2a}
-    span.s2 {font-kerning: none; background-color: #f6f7f9}
-    span.s3 {font-kerning: none; color: #2e3133; background-color: #f6f7f9; -webkit-text-stroke: 0px #2e3133}
-    span.s4 {font-kerning: none; color: #1443ae; background-color: #f6f7f9; -webkit-text-stroke: 0px #1443ae}
-    span.s5 {font-kerning: none; color: #a20010; background-color: #f6f7f9; -webkit-text-stroke: 0px #a20010}
-    span.s6 {font-kerning: none}
-    span.s7 {font-kerning: none; color: #18191b; background-color: #f6f7f9; -webkit-text-stroke: 0px #18191b}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;</span><span class="s2">script</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Global değişkenler</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">let</span><span class="s3"> </span><span class="s2">currentUser</span><span class="s3"> = </span><span class="s4">null</span><span class="s3">;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">let</span><span class="s3"> </span><span class="s2">currentPage</span><span class="s3"> = </span><span class="s5">'dashboard'</span><span class="s3">;</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Uygulama başlatma</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s2"> </span><span class="s7">initApp</span><span class="s2">() {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">checkLoginStatus</span><span class="s3">();</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">setupEventListeners</span><span class="s3">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Oturum durumunu kontrol et</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">checkLoginStatus</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Örnek: localStorage veya sunucuya istek atılabilir</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">showLoginScreen</span><span class="s3">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Kullanıcı verilerini getir</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">fetchUserData</span><span class="s3">(</span><span class="s2">token</span><span class="s3">) {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Sunucuya istek atıp kullanıcı verisi çekilebilir</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Olay dinleyicilerini kur</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">setupEventListeners</span><span class="s3">() {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s4">const</span><span class="s3"> </span><span class="s2">loginForm</span><span class="s3"> = </span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'loginForm'</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">if</span><span class="s2"> (</span><span class="s7">loginForm</span><span class="s2">) {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span></span><span class="s2">loginForm</span><span class="s3">.</span><span class="s2">addEventListener</span><span class="s3">(</span><span class="s5">'submit'</span><span class="s3">, </span><span class="s4">function</span><span class="s3">(</span><span class="s2">e</span><span class="s3">) {</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s7">e</span><span class="s2">.</span><span class="s7">preventDefault</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s7">handleLogin</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s4">const</span><span class="s3"> </span><span class="s2">logoutBtn</span><span class="s3"> = </span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'logoutBtn'</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">if</span><span class="s2"> (</span><span class="s7">logoutBtn</span><span class="s2">) {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span></span><span class="s2">logoutBtn</span><span class="s3">.</span><span class="s2">addEventListener</span><span class="s3">(</span><span class="s5">'click'</span><span class="s3">, </span><span class="s2">handleLogout</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Giriş işlemi</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">handleLogin</span><span class="s3">() {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s4">const</span><span class="s3"> </span><span class="s2">email</span><span class="s3"> = </span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'email'</span><span class="s3">).</span><span class="s2">value</span><span class="s3">;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s4">const</span><span class="s3"> </span><span class="s2">password</span><span class="s3"> = </span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'password'</span><span class="s3">).</span><span class="s2">value</span><span class="s3">;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">google</span><span class="s3">.</span><span class="s2">script</span><span class="s3">.</span><span class="s2">run</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>.</span><span class="s2">withSuccessHandler</span><span class="s3">(</span><span class="s2">loginSuccess</span><span class="s3">)</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>.</span><span class="s2">withFailureHandler</span><span class="s3">(</span><span class="s2">showError</span><span class="s3">)</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>.</span><span class="s2">userLogin</span><span class="s3">(</span><span class="s2">email</span><span class="s3">, </span><span class="s2">password</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loginSuccess</span><span class="s3">(</span><span class="s2">result</span><span class="s3">) {</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">if</span><span class="s2"> (!</span><span class="s7">result</span><span class="s2"> || !</span><span class="s7">result</span><span class="s2">.</span><span class="s7">user</span><span class="s2">) {</span></p>
-<p class="p6"><span class="s3"><span class="Apple-converted-space">            </span></span><span class="s7">showError</span><span class="s3">(</span><span class="s2">"Giriş başarısız. Lütfen bilgilerinizi kontrol edin."</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s4">return</span><span class="s2">;</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">currentUser</span><span class="s3"> = </span><span class="s2">result</span><span class="s3">.</span><span class="s2">user</span><span class="s3">;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">setupUI</span><span class="s3">(</span><span class="s2">currentUser</span><span class="s3">);</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">renderDashboard</span><span class="s3">(</span><span class="s2">result</span><span class="s3">.</span><span class="s2">dashboardData</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Çıkış işlemi</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">handleLogout</span><span class="s3">() {</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s7">currentUser</span><span class="s2"> = </span><span class="s4">null</span><span class="s2">;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">showLoginScreen</span><span class="s3">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Kullanıcı arayüzünü ayarla</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">setupUI</span><span class="s3">(</span><span class="s2">user</span><span class="s3">) {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'userName'</span><span class="s3">).</span><span class="s2">textContent</span><span class="s3"> = </span><span class="s2">user</span><span class="s3">[</span><span class="s5">"Ad"</span><span class="s3">] || </span><span class="s2">user</span><span class="s3">[</span><span class="s5">"name"</span><span class="s3">] || </span><span class="s5">""</span><span class="s3">;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'loginScreen'</span><span class="s3">).</span><span class="s2">classList</span><span class="s3">.</span><span class="s2">add</span><span class="s3">(</span><span class="s5">'d-none'</span><span class="s3">);</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'appContainer'</span><span class="s3">).</span><span class="s2">classList</span><span class="s3">.</span><span class="s2">remove</span><span class="s3">(</span><span class="s5">'d-none'</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Sayfa yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadPage</span><span class="s3">(</span><span class="s2">page</span><span class="s3">) {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Sidebar tıklamaları için</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">currentPage</span><span class="s3"> = </span><span class="s2">page</span><span class="s3">;</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">if</span><span class="s2"> (</span><span class="s7">page</span><span class="s2"> === </span><span class="s5">'dashboard'</span><span class="s2">) </span><span class="s7">loadDashboard</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">else</span><span class="s2"> </span><span class="s4">if</span><span class="s2"> (</span><span class="s7">page</span><span class="s2"> === </span><span class="s5">'contents'</span><span class="s2">) </span><span class="s7">loadContentsPage</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">else</span><span class="s2"> </span><span class="s4">if</span><span class="s2"> (</span><span class="s7">page</span><span class="s2"> === </span><span class="s5">'calendar'</span><span class="s2">) </span><span class="s7">loadCalendarPage</span><span class="s2">();</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s4">else</span><span class="s3"> </span><span class="s4">if</span><span class="s3"> (</span><span class="s2">page</span><span class="s3"> === </span><span class="s5">'suggestions'</span><span class="s3">) </span><span class="s2">loadSuggestionsPage</span><span class="s3">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">else</span><span class="s2"> </span><span class="s4">if</span><span class="s2"> (</span><span class="s7">page</span><span class="s2"> === </span><span class="s5">'projects'</span><span class="s2">) </span><span class="s7">loadProjectsPage</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">else</span><span class="s2"> </span><span class="s4">if</span><span class="s2"> (</span><span class="s7">page</span><span class="s2"> === </span><span class="s5">'clients'</span><span class="s2">) </span><span class="s7">loadClientsPage</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">else</span><span class="s2"> </span><span class="s4">if</span><span class="s2"> (</span><span class="s7">page</span><span class="s2"> === </span><span class="s5">'users'</span><span class="s2">) </span><span class="s7">loadUsersPage</span><span class="s2">();</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Dashboard yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadDashboard</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Sunucudan dashboard verisi çekilebilir</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Dashboard render</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">renderDashboard</span><span class="s3">(</span><span class="s2">data</span><span class="s3">) {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Dashboard içeriğini oluştur</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// İçerik sayfasını yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadContentsPage</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// İçerik verisi çek ve render et</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// İçerik sayfasını render et</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">renderContentsPage</span><span class="s3">(</span><span class="s2">contents</span><span class="s3">) {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// İçerik listesini oluştur</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Yeni içerik modalını göster</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">showNewContentModal</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Modal aç</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Takvim sayfasını yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadCalendarPage</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Takvim verisi çek ve render et</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Takvim bileşenini başlat</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">initCalendar</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Takvim başlat</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Öneriler sayfasını yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadSuggestionsPage</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Öneri verisi çek ve render et</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Projeler sayfasını yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadProjectsPage</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Proje verisi çek ve render et</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Müşteriler sayfasını yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadClientsPage</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Müşteri verisi çek ve render et</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Kullanıcılar sayfasını yükle</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">loadUsersPage</span><span class="s3">() {</span></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">// Kullanıcı verisi çek ve render et</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Giriş ekranını göster</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">showLoginScreen</span><span class="s3">() {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'loginScreen'</span><span class="s3">).</span><span class="s2">classList</span><span class="s3">.</span><span class="s2">remove</span><span class="s3">(</span><span class="s5">'d-none'</span><span class="s3">);</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">document</span><span class="s3">.</span><span class="s2">getElementById</span><span class="s3">(</span><span class="s5">'appContainer'</span><span class="s3">).</span><span class="s2">classList</span><span class="s3">.</span><span class="s2">add</span><span class="s3">(</span><span class="s5">'d-none'</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">// Hata mesajı göster</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4">function</span><span class="s3"> </span><span class="s2">showError</span><span class="s3">(</span><span class="s2">message</span><span class="s3">) {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">alert</span><span class="s3">(</span><span class="s2">message</span><span class="s3">);</span></p>
-<p class="p5"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p4"><span class="s6"></span><br></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">document</span><span class="s3">.</span><span class="s2">addEventListener</span><span class="s3">(</span><span class="s5">'DOMContentLoaded'</span><span class="s3">, </span><span class="s2">initApp</span><span class="s3">);</span></p>
-<p class="p1"><span class="s1">&lt;/</span><span class="s2">script</span><span class="s1">&gt;</span></p>
-</body>
-</html>
+<script>
+  let currentUser = null;
+  let currentPage = 'dashboard';
+
+  // Uygulama başlatma
+  function initApp() {
+    checkLoginStatus();
+    setupEventListeners();
+    handleNetworkChange(); // <-- Bu satırı ekleyin
+  }
+
+  // Oturum kontrolü
+  function checkLoginStatus() {
+    showLoginScreen();
+  }
+
+  // Olay dinleyicileri
+  function setupEventListeners() {
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+      loginForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        handleLogin();
+      });
+    }
+
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', handleLogout);
+    }
+  }
+
+  // Giriş işlemi
+  function handleLogin() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const spinner = document.getElementById('login-spinner');
+    
+    // Yükleme göstergesi
+    spinner.classList.remove('d-none');
+    
+    google.script.run
+      .withSuccessHandler(loginSuccess)
+      .withFailureHandler((error) => {
+        spinner.classList.add('d-none');
+        showError(error.message);
+      })
+      .userLogin(email, password);
+  }
+
+  function loginSuccess(result) {
+    if (!result || !result.user) {
+      showError("Giriş başarısız. Lütfen bilgilerinizi kontrol edin.");
+      return;
+    }
+
+    currentUser = result.user;
+    setupUI(currentUser);
+    renderDashboard(result.dashboardData);
+  }
+
+  // Çıkış işlemi
+  function handleLogout() {
+    currentUser = null;
+    showLoginScreen();
+  }
+
+  // UI ayarları
+  function setupUI(user) {
+    document.getElementById('userName').textContent = user["Ad"] || "";
+    document.getElementById('userAvatar').textContent = user["Ad"] ? user["Ad"].charAt(0) : "K";
+    document.getElementById('loginScreen').classList.add('d-none');
+    document.getElementById('appContainer').classList.remove('d-none');
+  }
+
+  // Sayfa yükleme
+  function loadPage(page) {
+    currentPage = page;
+    document.getElementById('sayfaBasligi').textContent = 
+      page === 'dashboard' ? 'Gösterge Panosu' :
+      page === 'contents' ? 'İçerikler' :
+      page === 'calendar' ? 'Takvim' :
+      page === 'suggestions' ? 'Öneriler' :
+      page === 'projects' ? 'Projeler' :
+      page === 'clients' ? 'Müşteriler' : 'Kullanıcılar';
+
+    if (page === 'dashboard') loadDashboard();
+    else if (page === 'contents') loadContentsPage();
+    else if (page === 'calendar') loadCalendarPage();
+    else if (page === 'suggestions') loadSuggestionsPage();
+    else if (page === 'projects') loadProjectsPage();
+    else if (page === 'clients') loadClientsPage();
+    else if (page === 'users') loadUsersPage();
+  }
+
+  // Dashboard yükleme
+  function loadDashboard() {
+    if (!currentUser) return;
+    
+    google.script.run
+      .withSuccessHandler(renderDashboard)
+      .withFailureHandler(showError)
+      .getDashboardData(currentUser);
+  }
+
+  // Dashboard render
+  function renderDashboard(data) {
+    const contentDiv = document.getElementById('content');
+    let html = '<div class="row">';
+    
+    // İstatistik kartları
+    for (const [key, value] of Object.entries(data.stats)) {
+      html += `
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">${key.replace(/([A-Z])/g, ' $1').trim()}</h5>
+              <p class="display-4">${value}</p>
+            </div>
+          </div>
+        </div>`;
+    }
+    html += '</div><div class="row mt-4">';
+
+    // Son aktiviteler
+    html += `
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Son Aktivite</div>
+          <ul class="list-group list-group-flush">`;
+    data.recentActivities.forEach(activity => {
+      html += `<li class="list-group-item">${activity["İçerik ID"]} - ${activity["Durum"]}</li>`;
+    });
+    html += `</ul></div></div>`;
+
+    // Bekleyen görevler
+    html += `
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Bekleyen Görevler</div>
+          <ul class="list-group list-group-flush">`;
+    data.pendingTasks.forEach(task => {
+      html += `<li class="list-group-item">${task["İçerik ID"]} - ${task["Durum"]}</li>`;
+    });
+    html += `</ul></div></div></div>`;
+
+    contentDiv.innerHTML = html;
+  }
+
+  // Diğer sayfa yükleme fonksiyonları
+  function loadContentsPage() {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5>İçerikler</h5>
+          <button class="btn btn-primary" onclick="showNewContentModal()">Yeni İçerik</button>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Proje</th>
+                <th>Mecra</th>
+                <th>Durum</th>
+                <th>İşlemler</th>
+              </tr>
+            </thead>
+            <tbody id="contentsList"></tbody>
+          </table>
+        </div>
+      </div>`;
+    
+    google.script.run
+      .withSuccessHandler(renderContentsPage)
+      .withFailureHandler(showError)
+      .getSheetData(APP_CONFIG.sheetNames.contents);
+  }
+
+  function renderContentsPage(contents) {
+    const tbody = document.getElementById('contentsList');
+    tbody.innerHTML = contents.map(content => `
+      <tr>
+        <td>${content["İçerik ID"]}</td>
+        <td>${content["Proje ID"]}</td>
+        <td>${content["Sosyal Medya Mecrası"]}</td>
+        <td><span class="badge badge-${getStatusBadgeClass(content["Durum"])}">
+          ${content["Durum"]}
+        </span></td>
+        <td>
+          <button class="btn btn-sm btn-info">Detay</button>
+        </td>
+      </tr>
+    `).join('');
+  }
+
+  function getStatusBadgeClass(status) {
+    const statusClasses = {
+      "Hazırlanıyor": "warning",
+      "Yönetici Onayı Bekliyor": "info",
+      "Müşteri Onayı Bekliyor": "primary",
+      "Planlandı": "success",
+      "Revizyonda": "danger",
+      "Yayınlandı": "success",
+      "Reddedildi": "danger"
+    };
+    return statusClasses[status] || "secondary";
+  }
+
+  function showNewContentModal() {
+    // Modal içeriği burada oluşturulabilir
+    alert("Yeni içerik modalı gösterilecek");
+  }
+
+  function loadCalendarPage() {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <div class="card-header">
+          <h5>İçerik Takvimi</h5>
+        </div>
+        <div class="card-body">
+          <div id="calendar"></div>
+        </div>
+      </div>`;
+    initCalendar();
+  }
+
+  function initCalendar() {
+    // Takvim başlatma kodu buraya gelecek
+    document.getElementById('calendar').innerHTML = "Takvim bileşeni yüklenecek";
+  }
+
+  function loadSuggestionsPage() {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <div class="card-header">
+          <h5>İçerik Önerileri</h5>
+        </div>
+        <div class="card-body">
+          Öneri listesi yüklenecek
+        </div>
+      </div>`;
+  }
+
+  function loadProjectsPage() {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <div class="card-header">
+          <h5>Projeler</h5>
+        </div>
+        <div class="card-body">
+          Proje listesi yüklenecek
+        </div>
+      </div>`;
+  }
+
+  function loadClientsPage() {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <div class="card-header">
+          <h5>Müşteriler</h5>
+        </div>
+        <div class="card-body">
+          Müşteri listesi yüklenecek
+        </div>
+      </div>`;
+  }
+
+  function loadUsersPage() {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <div class="card-header">
+          <h5>Kullanıcılar</h5>
+        </div>
+        <div class="card-body">
+          Kullanıcı listesi yüklenecek
+        </div>
+      </div>`;
+  }
+
+  // Giriş ekranını göster
+  function showLoginScreen() {
+    document.getElementById('loginScreen').classList.remove('d-none');
+    document.getElementById('appContainer').classList.add('d-none');
+    document.getElementById('email').value = "";
+    document.getElementById('password').value = "";
+  }
+
+  // Hata göster
+  function showError(message) {
+    alert("Hata: " + message);
+  }
+
+  // Sayfa yüklendiğinde uygulamayı başlat
+  document.addEventListener('DOMContentLoaded', initApp);
+
+  // Global erişim için
+  window.loadPage = loadPage;
+  window.showNewContentModal = showNewContentModal;
+
+  function handleNetworkChange() {
+  const networkStatus = document.getElementById('network-status');
+  
+  window.addEventListener('online', () => {
+    networkStatus.textContent = 'Çevrimiçi';
+    networkStatus.className = 'badge badge-success';
+  });
+  
+  window.addEventListener('offline', () => {
+    networkStatus.textContent = 'Çevrimdışı';
+    networkStatus.className = 'badge badge-danger';
+    showError('İnternet bağlantınız kesildi');
+  });
+}
+
+// DOMContentLoaded event listener burada kalacak
+document.addEventListener('DOMContentLoaded', initApp);
+
+</script>
