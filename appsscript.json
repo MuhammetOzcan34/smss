@@ -26,5 +26,10 @@
   "webapp": {
     "executeAs": "USER_DEPLOYING",
     "access": "ANYONE_ANONYMOUS"
-  }
+  },
+  "urlFetchWhitelist": [
+    "https://*.googleapis.com/",
+    "https://*.google.com/",
+    "https://*.gstatic.com/"
+  ]
 }
